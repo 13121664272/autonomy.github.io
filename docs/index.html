@@ -12,11 +12,29 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      name:'Java Doc',
       loadSidebar: true,
+      //切换页面后是否自动跳转到页面顶部。
+      auto2top: true,
+      search: { // default默认搜索
+        placeholder: '搜索',
+        noData: '找不到结果!',
+        depth: 3
+      }	,
       repo: ''
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!--代码快复制-->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!--Java代码高亮-->
+  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+    <!--全文搜索,直接用官方提供的无法生效-->
+    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+     <!-- 上一篇/下一篇 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 图片缩放插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
